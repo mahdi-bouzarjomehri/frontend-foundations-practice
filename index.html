@@ -2,87 +2,115 @@
 <html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <title>Frontend Foundations Practice</title>
+  <title>یادگیری فرانت‌اند | تمرین‌های من</title>
 
-  <!-- این استایل فقط همین یک صفحه را زیبا می‌کند -->
+  <!-- فونت رایگان و سبک -->
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+
   <style>
-    /* تم رنگی ساده و کم‌نویس */
     :root {
-      --bg: #f5f7fa;
+      --bg: #f3f5f9;
       --card: #ffffff;
-      --accent: #0d6efd;
-      --text: #333;
+      --accent: #3b82f6;
+      --text: #1e293b;
     }
+
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+
     body {
-      font-family: "Vazirmatn", Tahoma, Arial, sans-serif;
+      font-family: "Vazirmatn", sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.7;
-      padding: 2rem;
+      line-height: 1.8;
+      padding: 2rem 1rem;
     }
-    h1 {
+
+    header {
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
       color: var(--accent);
     }
-    /* لیست تمرین‌ها */
-    ul {
-      list-style: none;
+
+    /* کارت اصلی */
+    .wrapper {
       max-width: 600px;
       margin: 0 auto;
-    }
-    li {
       background: var(--card);
-      margin: .5rem 0;
-      padding: 1rem 1.25rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,.05);
-      transition: transform .15s;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
     }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    li {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 0.9rem 1.2rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
     li:hover {
-      transform: translateX(-5px);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
+
     a {
       color: var(--accent);
-      text-decoration: none;
       font-weight: 500;
+      text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
-    /* فوتر کوچک */
+
     footer {
       text-align: center;
-      margin-top: 3rem;
-      font-size: .85rem;
-      color: #888;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #64748b;
     }
   </style>
 </head>
 
 <body>
-  <h1>تمرین‌های HTML & CSS</h1>
+  <header>
+    <h1>یادگیری فرانت‌اند</h1>
+  </header>
 
-  <!-- هر تمرین را اینجا اضافه کنید -->
-  <ul>
-    <li>
-      <a href="01-hello-box/index.html">تمرین ۱ – ساخت یک جعبه رنگی ساده</a>
-    </li>
-    <!-- نمونه‌ی بعدی (همین خط را کپی کنید و اطلاعات را عوض کنید) -->
-    <!--
-    <li>
-      <a href="02-center-avatar/index.html">تمرین ۲ – آواتار وسط‌چین با فلکس‌باکس</a>
-    </li>
-    -->
-  </ul>
+  <main class="wrapper">
+    <ul>
+      <!-- تمرین اول -->
+      <li>
+        <a href="01-hello-box/index.html">تمرین ۱ – ساخت یک جعبه رنگی ساده</a>
+      </li>
+
+      <!-- هر تمرین جدید را همین زیر اضافه کنید -->
+      <!--
+      <li>
+        <a href="02-flex-hero/index.html">تمرین ۲ – هدر با فلکس‌باکس</a>
+      </li>
+      -->
+    </ul>
+  </main>
 
   <footer>
-    هر وقت تمرین جدید ساختی، همین بالا یک &lt;li&gt; تازه اضافه کن و لینکش را بده.
+    هر وقت تمرین تازه‌ای ساختی، همین بالا یک &lt;li&gt; جدید بساز و لینکش رو بده.
   </footer>
 </body>
 </html>
