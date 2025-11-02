@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Frontend Foundations Practice</title>
+
+  <!-- این استایل فقط همین یک صفحه را زیبا می‌کند -->
+  <style>
+    /* تم رنگی ساده و کم‌نویس */
+    :root {
+      --bg: #f5f7fa;
+      --card: #ffffff;
+      --accent: #0d6efd;
+      --text: #333;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "Vazirmatn", Tahoma, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: var(--accent);
+    }
+    /* لیست تمرین‌ها */
+    ul {
+      list-style: none;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    li {
+      background: var(--card);
+      margin: .5rem 0;
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,.05);
+      transition: transform .15s;
+    }
+    li:hover {
+      transform: translateX(-5px);
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    /* فوتر کوچک */
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      font-size: .85rem;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>تمرین‌های HTML & CSS</h1>
+
+  <!-- هر تمرین را اینجا اضافه کنید -->
+  <ul>
+    <li>
+      <a href="01-hello-box/index.html">تمرین ۱ – ساخت یک جعبه رنگی ساده</a>
+    </li>
+    <!-- نمونه‌ی بعدی (همین خط را کپی کنید و اطلاعات را عوض کنید) -->
+    <!--
+    <li>
+      <a href="02-center-avatar/index.html">تمرین ۲ – آواتار وسط‌چین با فلکس‌باکس</a>
+    </li>
+    -->
+  </ul>
+
+  <footer>
+    هر وقت تمرین جدید ساختی، همین بالا یک &lt;li&gt; تازه اضافه کن و لینکش را بده.
+  </footer>
+</body>
+</html>
